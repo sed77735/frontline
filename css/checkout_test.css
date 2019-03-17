@@ -1,0 +1,102 @@
+
+
+body {
+    /*background: #d5d5d1;*/
+    background: url("../image/01sandboard-dark.jpg") fixed;
+}
+
+
+
+/*----------------------------------------------------     */
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.table_side {
+    clear: both;
+    width: 830px;
+    height: 100%;
+    float: left;
+    background: white;
+}
+
+.people_side {
+    width: 450px;
+    height: 550px;
+    background: gray;
+    float: left;
+    position: relative;
+    background: url("../imgs/solider/doll_bg_test.jpg");
+
+}
+.cart_icon p{
+    color: black;
+}
+
+.remove_item:hover p{
+
+    color: white;
+}
+.like_item:hover p{
+    color: white;
+
+}
+.checkout_button{
+    background: #EAA315;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top:-50px;
+}
+.total_price{
+    font-size: 18px;
+    color: #e7418d;
+    font-weight: bold;
+}
+.checkout_button:hover{
+    text-decoration: none;
+    color:white;
+    background: #ce8d19;
+}
+.Process{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -350px;
+}
+.Process_css{
+    padding: 20px;
+    float: left;
+    border-radius: 4px;
+    margin: 10px 50px;
+    color: white;
+}
+.P_style{
+    background: #EAA315;
+}
+.P_nstyle{
+    background: #aaa;
+}
+.i_style{
+    color: #0f0f0f;
+    padding:0;
+    margin:10px 0;
+}
+.check_pay{
+    position: relative;
+    left: 5%;
+}
+.check_pay_title{
+    font-size: 18px;
+    font-weight: normal;
+}
+.check_pay_p{
+    font-size: 16px;
+    padding: 5px;
+    font-weight: 500;
+
+}

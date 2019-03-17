@@ -1,0 +1,462 @@
+
+
+
+/* ------------//無團隊照片底圖---------------- */
+
+
+
+.teaminfo_teaminfo {
+    /*border-left: 20px #fff solid;*/
+    /*border-right: 20px #fff solid;*/
+    /*border-top: 15px #fff solid;*/
+    /*border-bottom: 15px #fff solid;*/
+    /**/
+    position: relative;
+}
+
+
+
+.teaminfo_teaminfo h2 {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    background-color: #EAA315;
+    display: inline-block;
+    width: 160px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    /*left: -20px;*/
+}
+
+.group_page_bt{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    border-radius: 35px;
+    line-height: 35px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.group_addteam_bt{
+    background-color:#4ad8c6;
+    color: black;
+
+    position: absolute;
+    right: 20px;
+    top: 400px;
+
+}
+
+.group_manageteam_bt{
+
+    border:1px solid #4ad8c6;
+    color: #4ad8c6;
+    position: absolute;
+    right: 20px;
+    top: 445px;
+}
+
+
+
+
+
+
+
+/*    團隊label    */
+
+
+.group_team_bk img{  width: 100%;  }
+
+.group_team_label {
+    width: 317px;
+    height: 100px;
+    background-color: #ededed;
+    background-image: url("../image/team_bk_all.png");
+    position: absolute;
+    top: 391px;
+    left: 0px;
+    border-left:17px solid #eaa315;
+    box-sizing: border-box;
+
+}
+
+
+.group_team_label_wrap {
+    position: absolute;
+    top: 8px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+.group_team_label_wrap img {
+    width: 100%;
+}
+
+
+/*.group_team_label_logo{*/
+/*position: absolute;*/
+/*top:8px;*/
+/*left:30px;*/
+
+/*}*/
+
+.group_team_label content{
+    position: absolute;
+    left: 134px;
+    top: 20px;
+}
+
+.group_team_label h3{
+    font-size:20px;
+    font-weight:bold;
+    line-height: 35px;
+
+
+}
+
+.group_team_label p{
+    font-size:16px;
+    font-weight:bold;
+}
+
+/*    上方團隊介紹    */
+
+.teaminfo_team_warp{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 0;
+    left: 195px;
+
+}
+
+.teaminfo_teamlogo{
+    width: 245px;
+    height: 130px;
+    /*background-image: url(image/team_bk1_361.png);*/
+    background-size: cover;
+    position: absolute;
+    left: 500px;
+    top: 0px;
+    z-index: 8;
+    overflow: hidden;
+}
+
+.teaminfo_teamlogo img {
+    width: 100%;
+}
+
+.username {
+    text-align: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.usermame_m1,.usermame_m5{padding-top: 40px;}
+.usermame_m2,.usermame_m4{padding-top: 136px;}
+.usermame_m3{padding-top: 185px;}
+
+.teaminfo_team_m1, .teaminfo_team_m2, .teaminfo_team_m3, .teaminfo_team_m4, .teaminfo_team_m5{
+    margin-right: 5px;
+}
+.teaminfo_team_bk1, .teaminfo_team_bk5{
+    width: 168px;
+    height: 154px;
+    background-color: rgba(240,180,0,.8);
+
+}
+
+.teaminfo_team_bk2, .teaminfo_team_bk4{
+    width: 168px;
+    height: 235px;
+    background-color: rgba(240,180,0,.8);
+
+}
+
+.teaminfo_team_bk3{
+    width: 168px;
+    height: 300px;
+    background-color: rgba(240,180,0,.8);
+
+}
+
+
+.teaminfo_team_m1photo, .teaminfo_team_m5photo {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    /*background-image: url("image/group_member_photo1.png");*/
+    background-size: cover;
+    position: absolute;
+    top:68px;
+}
+
+.teaminfo_team_m2photo, .teaminfo_team_m4photo {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    /*background-image: url("image/group_member_photo2.png");*/
+    background-size: cover;
+    position: absolute;
+    top:165px;
+}
+
+.teaminfo_team_m3photo {
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    /*background-image: url("image/group_member_photo3.png");*/
+    background-size: cover;
+    position: absolute;
+    top: 215px;
+}
+
+.teaminfo_circle div {
+    overflow: hidden;
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.teaminfo_circle div img {
+    /*margin-top: 15px;*/
+    height: 100%;
+}
+
+.teaminfo_conclusion{
+    width: 317px;
+    height: 100px;
+    display: inline-block;
+
+    background-color:rgba(1,30,55,.5);
+    color: white;
+    padding: 25px 20px;
+    position: absolute;
+    top: 491px;
+    left: 0px;
+
+}
+
+/*0415修改*/
+
+.littlemap{
+
+
+    /*width: 425px;*/
+    /*height: 330px;*/
+    /*background-image: url("image/littlemap.png");*/
+    /*background-size: cover;*/
+    /*padding: 50px;*/
+
+    /*position: absolute;*/
+    /*top:370px;*/
+    /*left: 770px;*/
+
+    width: 365px;
+    height: 250px;
+    background-image: url("../image/littlemap.png");
+    background-size: cover;
+    padding: 50px;
+    position: absolute;
+    top: 385px;
+    left: 745px;
+    /*0424*/
+    z-index:5;
+    /**/
+
+}
+
+/*------------*/
+
+.littlemap h3{
+    font-size: 16px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    line-height: 20px;
+
+}
+
+.littlemap p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+/*0415增加*/
+
+.slogan_info, .team_intro_info{
+    display: block;
+    max-width: 300px;
+    /*text-align: justify;*/
+}
+
+
+.slogan_info{
+    margin-top: -25px;
+}
+
+/*中間比數區*/
+
+
+        .teaminfo_vsinfo{
+            max-width: 1270px;
+            width: 1270px;
+            /*height: 549px;*/
+            position: absolute;
+
+/*0422修改*/
+            /*background: url(image/team_info_target.png) no-repeat 80% center, url(image/team_info_vs.png) no-repeat center bottom;*/
+            background: url(../image/team_info_vs.png) no-repeat center bottom;
+/*------------------------------------*/
+            position: absolute;
+            top: 450px;
+
+    /*border: 1px solid yellow;*/
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.teaminfo_vsinfo h3{
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+}
+
+.teaminfo_vsinfo h2{
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+
+.teaminfo_vsinfo_win, .teaminfo_vsinfo_lose, .teaminfo_vsinfo_team_all{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px;
+    line-height: 60px;
+}
+
+.teaminfo_littlesoilder{
+    width: 90px;
+}
+
+.teaminfo_vsinfo_team_logo{
+    width: 100%;
+}
+
+/*會員遊戲比數*/
+
+.teaminfo_members_teaminfo{
+    width: 1270px;
+    /*height: 549px;*/
+    position: absolute;
+    top: 1000px;
+    /*border: 1px solid pink;*/
+    padding-left: 85px;
+    padding-top: 10px;
+}
+
+
+
+.teaminfo_members_teaminfo ul{
+    float: left;
+}
+
+.teaminfo_members_teaminfo_head{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}
+.teaminfo_members_teaminfo_head li{
+    float: left;
+    display: inline-block;
+    padding: 25px 10px;
+    width: 180px;
+    height: 70px;
+    border-bottom: 1px solid #eaa315;
+    text-align: center;
+}
+
+.teaminfo_members_teaminfo_list{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+
+}
+
+.teaminfo_members_teaminfo_list li{
+    float: left;
+    display: inline-block;
+    padding: 25px 10px;
+    width: 180px;
+    height: 70px;
+    border-bottom: 1px solid #eaa315;
+    text-align: center;
+
+}
+.teaminfo_members_teaminfo_list li img{
+    width: 55px;
+    margin-top: -18px;
+}
+
+/*.teaminfo_members_teaminfo_mphoto{*/
+/*background: url("image/group_member_photo2_sm60.png") no-repeat center center;*/
+/*}*/
+
+.teaminfo_members_morebt{
+    color: black;
+    position: absolute;
+    right: 110px;
+    top: 735px;
+    background-color: #eaa315;
+}
+
+
+/*0422新增*/
+
+.target_photo{
+    position: relative;
+    /* align-self: baseline; */
+    /* justify-content: center; */
+    top: 590px;
+    left: 855px;
+    opacity: 1;
+    width: 150px;
+
+    transform-origin: 132px 132px ;
+    animation-name: targetmove;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    transition: all 1.5s ease-in-out;
+}
+
+
+@keyframes targetmove {
+    from{opacity:.7;
+        transform: scale(1.1)}
+    to{opacity: .3;
+        transform: scale(1)}
+
+}
+
+
+/*--------------------*/

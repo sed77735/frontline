@@ -1,0 +1,731 @@
+
+
+i.error, span.error {
+    display: none;
+}
+
+
+/*0420修改 背景圖換 所以img也要檢查有沒有放新的*/
+body {
+    font-family: Microsoft JhengHei;
+    background-color: #011F35;
+    background:#011F35 url("../image/party_page_discolight_bk-02.png") repeat-y;
+}
+
+/*-------------------------------------------------------*/
+
+
+.fa-info-circle{
+    color: #009797;
+}
+
+
+/* ------------圖片標題  .team_title---------------- */
+
+/*改*/
+
+.flexbox-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.party_page_wrap {
+    max-width: 1270px;
+    margin: 0 auto;
+    background:url("../image/party_page_smallpaper_bk.png") repeat center center ;
+    /*background-blend-mode: color-burn;*/
+    background-size: 70%;
+
+}
+
+.party_page_title {
+    max-width: 1270px;
+    /* height: 500px; */
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 20px solid white;
+
+}
+
+.party_page_content_inner_wrap::before{
+    content: "";
+    display: block;
+
+    border-bottom: 18px solid #f000ff;
+    border-image: 16 repeating-linear-gradient(-90deg, rgba(0,255,235,.5) 0, rgba(0,255,235,.5) 4em, rgba(255,5,100,.5) 0, rgba(255,5,100,.5) 7em);
+
+}
+
+
+.party_page_title_left h2{
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+    letter-spacing: 8px;
+    height: 60px;
+}
+
+
+input.date {
+    background: url("../image/datcpic.png") right center no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* ------------圖片標題  .activity_title---------------- */
+
+.create_activity_title_right {
+
+}
+
+.create_activity_title_right img {
+    width: 100%;
+    /* height: 100%; */
+    margin: 0px;
+    /* mix-blend-mode: multiply; */
+}
+
+        img.party_title_lightlogo {
+            width: 48%;
+            position: absolute;
+
+            transform-origin: center center;
+            animation-name: logorun;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            transition:all 5s ease-in-out;
+        }
+
+/*0420新增 螢光LOGO動畫*/
+
+       @keyframes logorun {
+           25%{transform: rotate(10deg) scale(1.02);}
+           50%{transform: rotate(0deg) scale(1);}
+           75%{transform: rotate(-10deg) scale(1.02);}
+           100%{transform: rotate(0deg) scale(1);}
+       }
+
+        /*@keyframes logorun {*/
+            /*20%{transform: rotate(10deg) scale(1.02);}*/
+            /*22%{transform: rotate(0deg) scale(1);}*/
+            /*24%{transform: rotate(-10deg) scale(1.02);}*/
+            /*26%{transform: rotate(0deg) scale(1);}*/
+            /*!*100%{transform: rotate(-360deg) scale(1.02);}*!*/
+            /*100%{transform: rotate(360deg) scale(1.02);}*/
+        /*}*/
+
+
+
+        /*-----------------------------------*/
+
+.create_activity_title_text {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    background-color: #EAA315;
+    display: inline-block;
+    width: 160px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    /* left: -20px; */
+}
+
+.create_activity_title_text h2 {
+    line-height: 55px;
+}
+
+.create_activity_title_text p {
+    line-height: 20px;
+    width: 112px;
+}
+
+
+
+
+
+/*改*/
+
+
+
+/* ---------------內容  .activity_content---------------- */
+
+.party_page_content_inner_wrap{
+    max-width: 820px;
+    margin: 0 auto;
+    background: #EBE2D9 url("../image/activity_bg.png") repeat-y center center fixed;
+    background-blend-mode: color-burn;
+    border: 10px solid transparent;
+    /*border-top: 10px solid transparent;*/
+    /*border-bottom: 10px solid transparent;*/
+    /*border-image: 16 repeating-linear-gradient(-90deg, rgba(0,255,235,.5) 0, rgba(0,255,235,.5) 4em, rgba(255,5,100,.5) 0, rgba(255,5,100,.5) 7em);*/
+    border-image: url("../image/party_border_img4.png")2 round;
+    position: relative;
+}
+
+
+
+
+.party_page_content_inner {
+    padding: 50px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.party_page_content_inner .flexbox{
+    display: flex;
+    align-items: center;
+}
+
+
+.party_page_content_inner .equip_limit label[for="equip_limit"], .party_page_content_inner .intorduction label[for="intorduction"] {
+    padding-top: 16px;
+}
+
+
+.party_page_content_inner label[for="act_file"] {
+    padding-top: 10px;
+}
+
+
+.party_page_content_inner span {
+    font-size: 14px;
+    padding-left: 10px;
+}
+.party_page_intro{
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.party_page_intro_left{
+    margin-top: 45px;
+    margin-left: 45px;
+}
+
+.party_page_intro_right{
+    color: white;
+}
+
+.party_page_intro_right h2{
+    margin: 45px;
+}
+
+.party_page_intro_rightbottom h3{
+    line-height: 30px;
+    margin-left: 45px;
+    font-size: 18px;
+}
+
+.party_page_intro_rightbottom i{
+    padding-right: 10px;
+
+}
+
+.party_activity_photos{
+    margin-top: 20px;
+}
+
+.party_activity_photo{
+    /*width: 190px;*/
+    /*height: 190px;*/
+    max-width: 190px;
+
+}
+
+.party_activity_photo img{
+    width: 100%;
+}
+
+form {
+    flex-direction: column;
+    align-items: center;
+    min-width: 560px;
+}
+
+.top_info {
+    flex-direction: column;
+
+    /*width: 560px;*/
+}
+
+.top_info h2{
+    padding-bottom: 10px;
+}
+
+
+label {
+    display: inline-block;
+    width: 120px;
+}
+
+input {
+    font-size: 18px;
+    letter-spacing: 5px;
+    border: none;
+    width: 250px;
+    border-bottom: 3px #1D1E1E solid;
+    background-color: transparent;
+    margin: 10px;
+    padding-left: 10px;
+    outline: none;
+}
+
+select {
+    width: 140px;
+    height: 35px;
+    margin: 10px;
+    border: 3px #1D1E1E solid;
+    outline: none;
+
+    /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+
+    /*很关键：将默认的select选择框样式清除*/
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+
+    /*在选择框的最右侧中间显示小箭头图片*/
+    background: url("../image/selected_nobg.png") no-repeat scroll right center;
+
+    background-color: #ebe2d9;
+
+    /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+    padding: 5px 30px 5px 10px;
+    /*margin: 20px 0 0 20px;*/
+    color: #1D1E1E;
+    border-radius: inherit;
+    letter-spacing: 8px;
+
+}
+
+textarea {
+    width: 400px;
+    height: 150px;
+    border: 3px #1D1E1E solid;
+    background-color: transparent;
+    margin: 10px;
+    resize : none;
+    padding: 10px;
+    vertical-align: top;
+    outline: none;
+}
+
+
+.line {
+    width: 1095px;
+    height: 4px;
+    background-color: rgba(74, 217, 199, .5);
+    margin: 10px;
+}
+
+/*.btn1 {*/
+/*border-radius: 20px;*/
+/*color: #ffffff;*/
+/*font-size: 14px;*/
+/*background: #011F35;*/
+/*padding: 10px 20px 10px 20px;*/
+/*text-decoration: none;*/
+/*border: none;*/
+/*margin-right: 10px;*/
+/*line-height: 20px;*/
+/*}*/
+
+/*.btn1:hover {*/
+/*background: #7298b3;*/
+/*text-decoration: none;*/
+/*outline: none;*/
+/*}*/
+
+.btn2 {
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    background: #FF507A;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn2:hover {
+    background: rgba(0, 170, 205, 0.5);
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    color: #ffffff;
+
+}
+
+
+.btn {
+    margin: 10px 0;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+/* ---------------//  內容  .content---------------- */
+
+
+
+
+.custom_img span {
+    width: 185px;
+}
+
+.custom_img p {
+    background: #EAA315;
+    font-size: 14px;
+    width: 100px;
+    height: 40px;
+    /*margin-top: -10px;*/
+    line-height: 40px;
+    /*margin-left: 270px;*/
+}
+
+
+
+.img_upload_review p{
+    line-height: 150px;
+}
+
+
+
+.img_upload_groupright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.info{
+    display: block;
+    width: 200px;
+    height: 10px;
+    /*padding-top: 8px;*/
+
+    color: #009797;
+    font-weight: bold;
+}
+
+.fa-2x{
+
+}
+
+
+.img_upload_groupbk_info .info{
+    width: 350px;
+
+}
+
+
+/*checkbox樣式*/
+
+.team_open_section{
+    margin-top: 20px;
+}
+
+.team_open_section label{
+    margin-top: 30px;
+    font-weight: bold;
+    color: #000000;
+
+}
+.team_open_section input[type="checkbox"]{
+    display: none;
+}
+.team_open_select {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+.team_open_select label {
+    position: relative;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+span.checkbox{
+    font-size: 14px;
+    display: block;
+    width: 170px;
+    line-height: 40px;
+}
+
+/* Base styles for spans */
+.team_open_select span::before,
+.team_open_select span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* Check-boxes */
+.team_open_select span.checkbox::before {
+    width: 27px;
+    height: 27px;
+    /* background-color: rgb(0, 0, 0); */
+    left: -35px;
+    box-sizing: border-box;
+    border: 3px solid rgb(0, 0, 0);
+    transition: border-color .2s;
+}
+.team_open_select span.checkbox:hover::before {
+    border: 3px solid #ffd80d;
+}
+.team_open_select span.checkbox::after {
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    left: -31px;
+    top: -3px;
+    color: transparent;
+    transition: color .2s;
+    font-size: 1.3em;
+}
+input[type="checkbox"]:checked + label span.checkbox::after {
+    color: #000000;
+}
+#checkbox-2{
+    margin-left: 50px;
+}
+
+/*------------end of checkbox樣式*/
+
+
+
+/*個別未選前框線&背景顏色*/
+.img_upload_color_radio ul li .check{
+    display: block;
+    position: absolute;
+    border: 5px solid #fffa39;
+    background-color: #fffa39;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    top: 30px;
+    left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+.img_upload_color_radio ul li .teamcolor_1{
+    background-color: #ff2a45;
+    border: 2px solid #ffffff;
+}
+.img_upload_color_radio ul li .teamcolor_2{
+    background-color: #cc3300;
+    border: 2px solid #ffffff;
+}
+
+.img_upload_color_radio ul li .teamcolor_3{
+    background-color: #FF6600;
+    border: 2px solid #ffffff;
+}
+
+.img_upload_color_radio ul li .teamcolor_4{
+    background-color: #FF9900;
+    border: 2px solid #ffffff;
+}
+.img_upload_color_radio ul li .teamcolor_5{
+    background-color: #ffcc00;
+    border: 2px solid #ffffff;
+}
+
+.img_upload_color_radio ul li .teamcolor_6{
+    background-color: #66CC33;
+    border: 2px solid #ffffff;
+}
+
+.img_upload_color_radio ul li .teamcolor_7{
+    background-color: #2cccc7;
+    border: 2px solid #ffffff;
+}
+.img_upload_color_radio ul li .teamcolor_8{
+    background-color: #66CCFF;
+    border: 2px solid #ffffff;
+}
+.img_upload_color_radio ul li .teamcolor_9{
+    background-color: #6699FF;
+    border: 2px solid #ffffff;
+}
+.img_upload_color_radio ul li .teamcolor_10{
+    background-color: #6666FF;
+    border: 2px solid #ffffff;
+}
+.img_upload_color_radio ul li .teamcolor_11{
+    background-color: #3333CC;
+    border: 2px solid #ffffff;
+}
+.img_upload_color_radio ul li .teamcolor_12{
+    background-color: #e81a78;
+    border: 2px solid #ffffff;
+}
+
+
+/*整體hover時框線顏色*/
+.img_upload_color_radio ul li:hover .check {
+    border: 5px solid #000000;
+}
+
+.img_upload_color_radio ul li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    top: 5px;
+    left: 5px;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+
+/*整體check時框線顏色*/
+.img_upload_color_radio input[type=radio]:checked ~ .check {
+    border: 5px solid #000000;
+}
+
+
+
+
+.team_intorduction textarea, .team_slogan textarea, .team_member_addlist textarea{
+    width: 650px;
+    height: 250px;
+    border: 3px #1D1E1E solid;
+    margin-left: 0px;
+
+}
+
+textarea:focus {
+    background-color: transparent;
+    border: 3px #EAA315 dashed;
+}
+
+
+.team_intorduction label, .team_slogan label{
+    display: block;
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+    padding-bottom: 0px;
+    align-self: flex-start;
+}
+
+
+
+
+
+.team_intorduction, .team_slogan{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.team_intorduction_info, .team_slogan_info{
+    align-self: flex-end;
+    /*矯正位移*/
+    margin-right: -90px;
+}
+
+/*0420新增底圖框框動*/
+
+.party_page_content{
+    position: relative;
+}
+
+
+
+.draw_square{
+    position: absolute;
+    width: 360px;
+    height: 350px;
+    /*border: 2px solid #4a3ae7;*/
+    top: 1300px;
+}
+
+.hello {
+    stroke-dasharray: 1045;
+    width: 360px;
+    height: 350px;
+    fill:none;
+    stroke:#b5b5b5;
+    stroke-width:1px;
+
+    animation: 5s write2;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes write {
+    0% {
+        stroke-dashoffset: 1045;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+
+.draw_square2{
+    position: absolute;
+    width: 205px;
+    height: 220px;
+    /*border: 2px solid #4a3ae7;*/
+    top: 950px;
+    right:-80px;
+}
+
+.hello2 {
+    stroke-dasharray: 1045;
+    width: 205px;
+    height: 220px;
+    fill:none;
+    stroke:#b5b5b5;
+    stroke-width:.8;
+
+    animation: 5s write;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes write2 {
+    0% {
+        stroke-dashoffset: 1045;
+    }
+
+    30%{
+        stroke-dashoffset: 1045;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+
+/*---------------------------------  */

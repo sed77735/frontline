@@ -1,0 +1,156 @@
+.container {
+    width: 1280px;
+    height: 900px;
+    margin:25px auto;
+}
+
+.paper {
+    width: 600px;
+    height: 800px;
+    background: url(../images/register_back.jpg);
+    margin:0 auto;
+    box-sizing: border-box;
+    padding:70px 50px;
+    box-shadow: 10px 10px 20px #000;
+}
+
+.title {
+    width: 358px;
+    height: 61px;
+    background:url(../images/title_dark.png);
+    margin:0 auto;
+}
+
+.title h1 {
+    font-size: 24px;
+    color:#f2f2f2;
+    letter-spacing: 13px;
+    text-align: center;
+    line-height: 61px;
+}
+
+.formgroup {
+    width: 500px;
+    height: 485px;
+    margin:35px auto;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#register_data h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #777;
+    letter-spacing: 5px;
+    line-height: 32px;
+}
+
+.formgroup input {
+    width: 330px;
+    height: 32px;
+    border:2px solid #aaa;
+    padding-left: 5px;
+    outline: none;
+}
+
+.formgroup input::-webkit-input-placeholder {
+    color:#aaa;
+}
+
+.formgroup input:focus {
+    border: 2px solid #eaa315;
+}
+
+.formgroup input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+
+.formgroup td {
+    height: 32px;
+    padding:6px 0;
+    box-sizing: border-box;
+}
+
+.formgroup p {
+    padding-left: 5px;
+    line-height: 14px;
+    color: #f00;
+    font-size: 14px;
+}
+
+.formgroup td:nth-child(1) {
+    width: 100px;
+    vertical-align: bottom;
+}
+
+.formgroup td:nth-child(2) {
+    width: 340px;
+    padding-left: 15px;
+}
+
+#registerName,#registerTel {
+    width: 150px;
+}
+
+#registerGender {
+    width: 150px;
+    height: 32px;
+    border:2px solid #aaa;
+    color:#aaa;
+}
+
+.formgroup textarea {
+    width: 330px;
+    height: 70px;
+    border:2px solid #aaa;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+.board {
+    height: 40px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 7px;
+    color: #fff;
+    display:inline-block;
+    margin-top:0;
+    float: left;
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
+
+.submit {
+    width: 195px;
+    background:#eaa315;
+    margin-left:55px;
+    margin-right: 10px;
+}
+
+.cancel {
+    width: 155px;
+    background: rgba(117, 117, 117, 1);
+    margin-left: 10px;
+    margin-right: 55px;
+}
+
+.cancel a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+a:visited {
+    color: #fff;
+}
+
+input.error, option.error, textarea.error {
+    border: 1.5px solid #f00;
+    color: #f00;
+    letter-spacing: 8px;
+}  												/*錯誤狀態樣式*/

@@ -1,0 +1,449 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    background: #333333;
+    height: 800vh;
+}
+.wrap{
+    width:100%;
+    height: 100vh;
+}
+.home_1{
+    width:1680px;
+    height: 100vh;
+    background: url("../imgs/index/home_01_bg.jpg") no-repeat;
+    opacity: 1;
+    position: fixed;
+    left:50%;
+    margin-left: -840px;
+}
+.home_1_light{
+    height: 100vh;
+    background: url("../imgs/index/home_logo_light_frame.png") no-repeat;
+    opacity: 0;
+}
+.home_1_logo{
+    width: 1118px;
+    height: 218px;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    margin: -109px -559px;
+    background: url("../imgs/index/logo_text.png") no-repeat center;
+}
+.logo_p {
+    width: 400px;
+    color: whitesmoke;
+    position: absolute;
+    letter-spacing: 5px;
+    left: 50%;
+    bottom: 2%;
+    margin: 0 -130px;
+}
+
+
+.home_2{
+    width:1680px;
+    height: 100vh;
+    background: url("../imgs/index/home_02_bg.jpg") no-repeat;
+    position: fixed;
+    left:50%;
+    margin-left: -840px;
+    opacity: 0;
+}
+.home_2_title{
+    position: absolute;
+    width: 714px;
+    height: 306px;
+    top:100px;
+    left:100px;
+    background: url("../imgs/index/home_02_title.png") no-repeat center;
+}
+.home_2_map{
+    position: absolute;
+    width: 1238px;
+    height: 693px;
+    top:0;
+    right: 0;
+    background: url("../imgs/index/home_02_map.png") no-repeat center;
+    opacity:0;
+}
+.home_2_ind{
+    position: absolute;
+    color: white;
+    top:400px;
+    left: -540px;
+
+}
+.home_2_ind>p{
+    margin: 20px 0;
+    letter-spacing: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+}
+.home_2_gamemode{
+    position: absolute;
+    width: 586px;
+    height: 399px;
+    bottom: -400px;
+    left: 550px;
+    background: url("../imgs/index/home_02_gametypes.png") no-repeat center;
+}
+.home_2_gamemode>p{
+    width: 160px;
+    display: block;
+    color: #EAA315;
+    position: relative;
+    top:90px;
+    font-size: 24px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    letter-spacing: 5px;
+    left:40px;
+    padding: 10px;
+    background: #202020;
+}
+.home_2_ground{
+    position: absolute;
+    right:200px;
+    top:300px;
+}
+.home_2_groundp{
+    width: 200px;
+    height: 60px;
+    color: #EAA315;
+    text-align: center;
+    font-size: 24px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    line-height: 60px;
+}
+.mode{
+    background: url("../imgs/index/home_02_terrian_div_bg.png") no-repeat center;
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.mode>h5 {
+letter-spacing: 2px;
+}
+
+.mode>p{
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.home_2_ground_link>a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    background: #EAA315;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 微軟正黑體;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+/*-----------------------------------*/
+
+.home_3{
+    width:1680px;
+    height: 100vh;
+    background: url("../imgs/index/home_03_bg.jpg") no-repeat;
+    position: fixed;
+    left:50%;
+    margin-left: -840px;
+    opacity: 0;
+}
+.home_3_title{
+    position: absolute;
+    width: 714px;
+    height: 306px;
+    top:100px;
+    left:100px;
+    background: url("../imgs/index/home_03_title.png") no-repeat center;
+}
+.home_3_member{
+    position: absolute;
+    width: 294px;
+    height: 362px;
+    top:100px;
+    right: -410px;
+    background: url("../imgs/index/home_03_account.png") no-repeat center;
+}
+.home_3_ind{
+    position: absolute;
+    color: white;
+    top: 380px;
+    left: -500px;
+}
+.home_3_ind>p{
+    margin: 20px 0;
+    letter-spacing: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+}
+.home_3_memberin{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top:120px;
+    right: -320px;
+}
+.home_3_memberin>a{
+    display: block;
+    width: 180px;
+    height: 40px;
+    background: #5BBCAE;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 微軟正黑體;
+    letter-spacing: 5px;
+}
+.home_3_team{
+    width: 600px;
+    position: absolute;
+    right: 100px;
+    bottom: 50px;
+}
+.home_3_ground{
+    width: 40%;
+    float: left;
+    height: 100px;
+    margin: 10px;
+}
+.home_3_ground>a{
+    display: block;
+    background: deeppink;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 微軟正黑體;
+    letter-spacing: 5px;
+    margin-top: 40px;
+}
+
+.home_3_productp{
+    float: left;
+    width: 25%;
+    margin: 0 5px;
+    position: absolute;
+    bottom: 0;
+}
+.home_3_productp>img{
+    width: 70%;
+    height: 70%
+}
+.pos_1{
+
+    left: 130px;
+}
+.pos_2{
+
+    left: 400px;
+}
+.pos_3{
+
+    left: 670px;
+}
+.home_3_findproduct{
+    position: absolute;
+    color: white;
+    left: 460px;
+    bottom: 330px;
+}
+
+.home_3_findproduct>a{
+    display: block;
+    background: #EAA315;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-family: 微軟正黑體;
+    letter-spacing: 5px;
+    float: right;
+    margin-top: 35px;
+    width: 200px;
+}
+
+/*-----------------------------------*/
+
+.home_4{
+    width:1680px;
+    height: 100vh;
+    background: url("../imgs/index/home_04_bg.jpg") no-repeat;
+    position: fixed;
+    left:50%;
+    margin-left: -840px;
+    opacity: 0;
+}
+.home_4_title{
+    width: 690px;
+    height: 190px;
+    margin: 0 auto;
+    background: url("../imgs/index/home_04_title.png") no-repeat 0 ;
+}
+.home_4_solide{
+    width: 100%;
+    height: 500px;
+
+}
+.home_4_people{
+    width: 20%;
+    height: 500px;
+    float: left;
+    margin: 0 40px;
+    position: relative;
+}
+.show_1{
+    opacity: 1;
+}
+.show_1:hover{
+    opacity: 0;
+}
+.hide_1{
+    position: absolute;
+    top: 0%;
+    opacity: 0;
+}
+.hide_1:hover{
+    opacity: 1;
+}
+
+.home4_solide_in{
+    color: white;
+    font-family: 微軟正黑體;
+    position: absolute;
+    top: 540px;
+    left: 20px;
+}
+.home4_solide_in>h5{
+     text-align: center;
+     font-size: 24px;
+     padding-bottom: 20px;
+     border-bottom: white 4px solid ;
+ }
+.home4_solide_in>p{
+    color: #b8b8b8;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+/*-----------------------------------*/
+
+.home_5{
+    width:1680px;
+    height: 100vh;
+    background: url("../imgs/index/home_05_bg.jpg") no-repeat;
+    position: fixed;
+    left:50%;
+    margin-left: -840px;
+    opacity: 0;
+}
+.home_5_bg{
+    width: 1296px;
+    height: 419px;
+    position: absolute;
+    left: 50%;
+    top:45%;
+    margin: -209.5px 0 0 -648px;
+    background: url("../imgs/index/home_logo_three_kings_bg.png") no-repeat;
+    mix-blend-mode: overlay;
+}
+.home_5_bg_people{
+    background: url("../imgs/index/home_logo_three_kings.png") no-repeat;
+    width: 1296px;
+    height: 419px;
+    position: absolute;
+    opacity: 0;
+}
+.home_5_light{
+    position: absolute;
+    width: 1680px;
+    height: 100vh;
+    background: url("../imgs/index/home_logo_light_frame_end.png") no-repeat;
+    opacity: 0;
+}
+.home_5_logo{
+    position: absolute;
+    width: 1680px;
+    height: 100vh;
+    background: url("../imgs/index/logo_text.png") no-repeat center;
+}
+.home_5_link{
+    width: 800px;
+    margin-left: -360px;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+}
+.home5width{
+   width: 25%;
+    float: left;
+    margin: 0 30px ;
+}
+.home5width>a{
+    padding: 5px 10px;
+    background: #1f1f1f;
+    text-decoration: none;
+    color: #b8b8b8;
+    border-radius: 50px;
+    letter-spacing: 5px;
+}
+.logo_p_5{
+    width: 400px;
+    color: whitesmoke;
+    position: absolute;
+    letter-spacing: 5px;
+    left: 50%;
+    top:59.5%;
+    bottom: 2%;
+    margin: 0 -130px;
+}
+
+.color_1:hover{
+    border: #5BBCAE 2px solid;
+}
+.color_2:hover{
+    border: deeppink 2px solid;
+}
+.color_3:hover{
+    border: #EAA315 2px solid;
+}
+
+
+
+
+.home_1.show{
+    opacity: 0;
+}
+.home_2.show{
+    opacity: 1;
+    z-index: 999;
+}
+.home_3.show{
+    opacity: 1;
+    z-index: 999;
+}
+.home_4.show{
+    opacity: 1;
+    z-index: 999;
+}
+.home_5.show{
+    opacity: 1;
+    z-index: 999;
+}
+
+.tranform{
+    transition: all 1s;
+}

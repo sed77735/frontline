@@ -1,0 +1,234 @@
+.container {
+    width: 1280px;
+    height: 100%;
+    margin:25px auto;
+}
+
+.about {
+    width: 1280px;
+    height: 3000px;
+    background:  linear-gradient(90deg, rgba(255, 255, 255,1), rgba(200, 200, 200, 1));
+    margin:0 auto;
+}
+
+.board {
+    width: 158px;
+    height: 53px;
+    color:#000;
+    font-size: 20px;
+    text-align: center;
+    line-height: 53px;
+    float: left;
+    margin-top: 40px;
+    background: #eaa315;
+    font-weight: bold;
+}
+
+.about h2 {
+    font-size: 36px;
+    letter-spacing: 8px;
+    line-height: 40px;
+    text-align: center;
+    margin:0 auto 20px auto;
+}
+
+.ground {
+    width: 1280px;
+    height: 545px;
+    float: left;
+    box-sizing: border-box;
+    padding:0 20px 20px 20px;
+}
+
+.ground_left {
+    width: 620px;
+    height: 455px;
+    display: inline-block;
+    float: left;
+}
+
+.ground_right {
+    width: 620px;
+    height: 455px;
+    display: inline-block;
+    float:left;
+    background: #fff;
+    padding:65px 0;
+}
+
+.ground_right p {
+    font-size: 20px;
+}
+
+.ground_right table {
+    margin:0 auto;
+
+
+}
+
+.ground_right tr {
+    width: 300px;
+    height: 42px;
+}
+
+.ground_right td:first-child {
+    padding-right: 9px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+
+.fa-cog {
+    color: #000;
+}
+
+.service {
+    width: 1280px;
+    height: 866px;
+    float: left;
+    padding:0 20px 33px 20px;
+    box-sizing: border-box;
+
+}
+
+.service_box {
+    position: relative;
+    width: 1240px;
+    height: 753px;
+    padding:49px 94px;
+    background: url(../images/service_back.jpg);
+    font-size: 0;
+}
+
+.service_box figure {
+    position: absolute;
+    left:40%;
+    top:24%;
+    z-index: 2;
+}
+
+.service_box>div {
+    width: 525px;
+    height: 322px;
+    float: left;
+    display: inline-block;
+    padding-top: 47px;
+}
+
+.s_leftup {
+    background: rgba(74, 216, 198, .7);
+}
+
+.s_rightup {
+    background: rgba(233, 231, 232, .7);
+}
+.s_leftdown {
+    background: rgba(233, 231, 232, .7);
+}
+.s_rightdown {
+    background: rgba(255, 80, 122, .7);
+}
+
+.service p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 43px;
+}
+
+.service h3 {
+    font-size: 20px;
+    text-decoration: underline;
+    line-height: 43px;
+    color: #000;
+    text-align: center;
+}
+
+.service button {
+    width: 119px;
+    height: 38px;
+    border-radius: 20px;
+    background: rgba(255, 80, 122, 1);
+    text-align: center;
+    line-height: 38px;
+    color: #fff;
+    font-size: 16px;
+    border:none;
+    margin: 10px auto;
+    display: block;
+    font-weight: normal;
+    cursor: pointer;
+    outline: none;
+}
+
+.faq {
+    width: 1280px;
+    height: 780px;
+    box-sizing: border-box;
+    padding:0 20px 0 20px;
+    float: left;
+}
+
+.faq_box {
+    width: 1240px;
+    height: 621px;
+    box-sizing: border-box;
+    padding:10px 175px;
+    background: url(../images/faq_back.png);
+}
+
+.faq p {
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 4px;
+    line-height: 35px;
+}
+
+.faq h3 {
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 4px;
+    line-height: 35px;
+    text-decoration: underline;
+}
+
+
+.button_faq {
+    width: 158px;
+    height: 38px;
+    background: rgba(74, 216, 198, 1);
+    text-align: center;
+    line-height: 38px;
+    color: #000;
+    font-size: 16px;
+    border:none;
+    margin: 0 auto;
+    display: block;
+    font-weight: normal;
+    cursor: pointer;
+    outline: none;
+}
+
+.five {
+    width: 1280px;
+    height: 780px;
+    box-sizing: border-box;
+    padding:0 20px 0 20px;
+    float: left;
+}
+
+.five_box {
+    width: 1240px;
+    height: 600px;
+    box-sizing: border-box;
+    background: url(../images/band.png);
+}
+
+footer {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 3060px;
+    z-index: 99;
+    background: rgba(55, 75, 125, 1);
+    /*clip-path: polygon(84% 0, 100% 100%, 0 100%, 0 0);*/
+}

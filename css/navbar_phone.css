@@ -1,0 +1,187 @@
+
+
+
+
+#nav_pc {
+    display: none;
+}
+
+.nav_li p {
+    cursor: pointer;
+}
+
+/*---------------------------MENU----------------------------------------*/
+
+.transition{
+    transition: 0.5s all ease-in-out;
+}
+
+.menu{
+    cursor: pointer;
+}
+
+
+.allbar {
+    cursor: pointer;
+}
+
+.bar{
+    width: 30px;
+    height: 3px;
+    background: rgb(74, 215, 197);
+    /*background: #fff;*/
+    margin: 6px 0;
+}
+
+.active .bar1{
+    -webkit-transform: translateY(12px) rotate(-135deg)  ;
+    transform: translateY(12px) rotate(-135deg)  ;
+}
+
+.active .bar2{
+    -webkit-transform: rotate(135deg) ;
+    transform: rotate(135deg) ;
+}
+
+.active .bar3{
+    opacity: 0;
+}
+
+
+
+/* ---------導覽列--- .navigation ------ */
+
+header.navigation {
+    background-color: #1D1E1E;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-bottom: 2px #DF9C1F solid;
+}
+
+.navigation div.hum {
+    flex: 1;
+    /* width: 56px; */
+    min-width: 100px;
+    padding-left: 20px;
+}
+
+.navigation div.logo {
+    flex: 1;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-left: 10px; */
+}
+
+.navigation div.logo div {
+    width: 170px;
+}
+
+.navigation div.logo div img {
+    width: 100%;
+}
+
+.navigation ul.nav_right {
+    /* width: 210px; */
+    width: 300px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.navigation ul.nav_right li {
+    margin-right: 15px;
+    width: 25px;
+}
+
+.navigation ul.nav_right img {
+    width: 100%;
+}
+
+
+ul.nav {
+    width: 100%;
+    background: #002B51;
+    text-align: center;
+    line-height: 53px;
+    max-height: 0;
+    overflow: hidden;
+}
+
+ul.nav.active {
+    max-height: 1000px;
+}
+
+ul.nav .nav_li {
+    width: 100%;
+    border-bottom: 1px #D1D1D1 solid;
+    position: relative;
+}
+
+ul.nav .nav_li a, .nav_li p {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #D5D5D5;
+}
+
+ul.nav .nav_li p {
+    border-bottom: 1px #D1D1D1 solid;
+}
+
+ul.nav .nav_li div {
+    background: rgba(231,231,231,.2);
+    height: 53px;
+    display: inline-block;
+    width: 80px;
+    color: #D5D5D5;
+    font-size: 22px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+ul.nav .nav_li ul {
+    background: #011F35;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+}
+
+ul.nav .nav_li ul li {
+    border-bottom: 1px rgba(103,103,103,1) solid;
+}
+
+ul.nav .nav_li ul li:last-child {
+    border-bottom: 4px rgba(103,103,103,1) solid;
+}
+
+ul.nav .nav_li ul.active {
+    max-height: 500px;
+}
+
+ul.nav .nav_li div span {
+    transform: rotate(0deg);
+    display: inline-block;
+}
+
+ul.nav .nav_li div span.active {
+    transform: rotate(-90deg);
+    display: inline-block;
+}
+
+
+/*.transition {*/
+    /*transition: all 0.5s;*/
+/*}*/
+
+
+
+/* ------------//導覽列---------------- */

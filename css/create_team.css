@@ -1,0 +1,980 @@
+
+
+
+        .fa-info-circle {
+            color: #009797;
+        }
+
+
+
+
+        /* ------------圖片標題  .team_title---------------- */
+
+        /*改*/
+
+        .creat_team_wrap {
+            max-width: 1270px;
+            margin: 0 auto;
+            background: #EBE2D9 url("../image/activity_bg.png") repeat-y center center fixed;
+            background-blend-mode: color-burn;
+
+
+
+            /*0418 新增*/
+            overflow: hidden;
+            position: relative;
+
+            /*------------------------*/
+        }
+
+        .create_team_title {
+            /* background: #fff; */
+            max-width: 1095px;
+            height: 230px;
+            margin: 0 auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .create_team_title_left {
+            flex: 1 1 145px;
+            width: 145px;
+            height: 65px;
+            color: black;
+            font-weight: bold;
+            background: url("../image/create_team_titlebk.png") no-repeat center bottom;
+            text-align: center;
+            align-self: flex-start;
+
+        }
+
+        .create_team_title_left h2 {
+            font-size: 20px;
+            display: block;
+            font-weight: bold;
+            letter-spacing: 8px;
+            height: 60px;
+        }
+
+        .create_team_title_middle {
+            flex: 2 1 330px;
+            width: 330px;
+            height: 60px;
+            background: url("../image/create_team_titlebk_middle.png") no-repeat center center;
+            text-align: center;
+        }
+
+        .create_team_title_right {
+            flex: 2 1 360px;
+            justify-content: flex-end;
+            align-items: center;
+
+            width: 360px;
+            height: 30px;
+            background: url("../image/create_team_titlebk_right.png") no-repeat center center;
+            text-align: center;
+
+            align-self: flex-end;
+
+        }
+
+        /*改*/
+
+        /* ---------------內容  .activity_content---------------- */
+
+        .create_team_content_inner {
+            padding: 50px;
+            margin-left: -100px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .create_team_content_inner .equip_limit label[for="equip_limit"], .create_team_content_inner .intorduction label[for="intorduction"] {
+            padding-top: 16px;
+        }
+
+        .create_team_content_inner label[for="act_file"] {
+            padding-top: 10px;
+        }
+
+        .create_team_content_inner span {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        form {
+            flex-direction: column;
+            align-items: center;
+            min-width: 560px;
+        }
+
+        .top_info {
+            flex-direction: column;
+            width: 560px;
+        }
+
+        .top_info h2 {
+            padding-bottom: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        input {
+            font-size: 18px;
+            letter-spacing: 5px;
+            border: none;
+            width: 250px;
+            border-bottom: 3px #1D1E1E solid;
+            background-color: transparent;
+            margin: 10px;
+            padding-left: 10px;
+            outline: none;
+        }
+
+        select {
+            width: 140px;
+            height: 35px;
+            margin: 10px;
+            border: 3px #1D1E1E solid;
+            outline: none;
+
+            /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+
+            /*很关键：将默认的select选择框样式清除*/
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+
+            /*在选择框的最右侧中间显示小箭头图片*/
+            background: url("../image/selected_nobg.png") no-repeat scroll right center;
+
+            background-color: #ebe2d9;
+
+            /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+            padding: 5px 30px 5px 10px;
+            /*margin: 20px 0 0 20px;*/
+            color: #1D1E1E;
+            border-radius: inherit;
+            letter-spacing: 8px;
+
+        }
+
+        textarea {
+            width: 400px;
+            height: 150px;
+            border: 3px #1D1E1E solid;
+            background-color: transparent;
+            margin: 10px;
+            resize: none;
+            padding: 10px;
+            vertical-align: top;
+            outline: none;
+        }
+
+        .line {
+            width: 1095px;
+            height: 4px;
+            background-color: rgba(74, 217, 199, .5);
+            margin: 10px;
+        }
+
+        .btn1 {
+            border-radius: 20px;
+            color: #ffffff;
+            font-size: 14px;
+            background: #011F35;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            border: none;
+            margin-right: 10px;
+            line-height: 20px;
+        }
+
+        .btn1:hover {
+            background: #7298b3;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .btn2 {
+            border-radius: 20px;
+            color: #000000;
+            font-size: 14px;
+            background: #66CCCC;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            border: none;
+        }
+
+        .btn2:hover {
+            background: #3cb0fd;
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+            color: #ffffff;
+
+        }
+
+        .btn {
+            margin: 10px 0;
+            align-self: flex-end;
+            margin-right: 20px;
+        }
+
+        /* ---------------//  內容  .content---------------- */
+
+        .img_upload {
+            overflow: hidden;
+            position: relative;
+            display: inline-block;
+            /*background-color: #fff;*/
+            width: 225px;
+            height: 40px;
+            text-align: center;
+            /*padding: 10px 30px;*/
+            vertical-align: top;
+
+        }
+
+        .img_file {
+            position: absolute;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 0;
+            right: 0;
+            width: 225px;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .custom_img {
+            background: #fff;
+            width: 225px;
+            height: 40px;
+            opacity: 0.9;
+            align-items: center;
+        }
+
+        .custom_img span {
+            width: 185px;
+        }
+
+        .custom_img p {
+            background: #EAA315;
+            font-size: 14px;
+            width: 100px;
+            height: 40px;
+            /*margin-top: -10px;*/
+            line-height: 40px;
+            /*margin-left: 270px;*/
+        }
+
+        .img_upload_review {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: black;
+            /* background-image: url(; */
+            background: url("../image/add_member_photo.png") no-repeat center center;
+            block-size: cover;
+            background-size: cover;
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .img_upload_review img {
+            height: 100%;
+        }
+
+        .img_upload_review p {
+            line-height: 150px;
+        }
+
+        .img_upload_groupleft {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .img_upload_groupright {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            padding-left: 30px;
+        }
+
+        .info {
+            display: block;
+            width: 200px;
+            height: 10px;
+            padding-top: 8px;
+            color: #009797;
+            font-weight: bold;
+        }
+
+        .fa-2x {
+
+        }
+
+        .img_upload_info {
+            padding-top: 10px;
+        }
+
+        .img_upload_groupbk {
+            margin-top: 25px;
+        }
+
+        .img_upload_groupbk_review {
+            width: 265px;
+            height: 160px;
+            background: url("../image/add_groupbk_photo.png") no-repeat center center;
+            block-size: cover;
+            background-size: cover;
+            display: inline-block;
+            text-align: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .img_upload_groupbk_review img {
+            height: 100%;
+        }
+
+        .img_upload_groupbk_review {
+            line-height: 160px;
+        }
+
+        .img_upload_groupbk_info .info {
+            width: 350px;
+
+        }
+
+        .img_upload_groupbk_left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .img_upload_groupbk_right {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+
+        .img_upload_groupbk_info {
+            padding-left: 20px;
+        }
+
+        /*團隊公開checkbox樣式*/
+
+        .team_open_section {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .team_open_section input[type="checkbox"] {
+            display: none;
+        }
+
+        .team_open_select {
+            margin-bottom: 10px;
+            font-size: 1em;
+            display: flex;
+        }
+
+        .team_open_select label {
+            position: relative;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+        span.checkbox {
+            font-size: 14px;
+            display: block;
+            width: 300px;
+        }
+
+        /* Base styles for spans */
+        .team_open_select span::before,
+        .team_open_select span::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        /* Check-boxes */
+        .team_open_select span.checkbox::before {
+            width: 27px;
+            height: 27px;
+            /* background-color: rgb(0, 0, 0); */
+            left: -35px;
+            box-sizing: border-box;
+            border: 3px solid rgb(0, 0, 0);
+            transition: border-color .2s;
+        }
+
+        .team_open_select span.checkbox:hover::before {
+            border: 3px solid #ffd80d;
+        }
+
+        .team_open_select span.checkbox::after {
+            content: '\f00c';
+            font-family: 'FontAwesome';
+            left: -31px;
+            top: -3px;
+            color: transparent;
+            transition: color .2s;
+            font-size: 1.3em;
+        }
+
+        input[type="checkbox"]:checked + label span.checkbox::after {
+            color: #000000;
+        }
+
+        #checkbox-2 {
+            margin-left: 50px;
+        }
+
+        /*------------end of 團隊公開checkbox樣式*/
+
+        /*團隊背景色radio 樣式*/
+
+        .img_upload_color_radio {
+            display: block;
+            position: relative;
+            height: 100px;
+            width: 325px;
+            margin-top: 10px;
+        }
+
+        .img_upload_color_radio ul {
+            list-style: none;
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .img_upload_color_radio ul li {
+            color: #fffa39;
+            display: block;
+            position: relative;
+            float: left;
+            width: 50px;
+            height: 50px;
+            /* border-bottom: 1px solid #111111; */
+        }
+
+        .img_upload_color_radio ul li input[type=radio] {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        .img_upload_color_radio ul li label {
+            display: block;
+            position: relative;
+            font-weight: 300;
+            font-size: 1.35em;
+            padding: 25px 25px 25px 80px;
+            margin: 10px auto;
+            height: 30px;
+            z-index: 9;
+            cursor: pointer;
+            -webkit-transition: all 0.25s linear;
+        }
+
+        /*個別未選前框線&背景顏色*/
+        .img_upload_color_radio ul li .check {
+            display: block;
+            position: absolute;
+            border: 5px solid #fffa39;
+            background-color: #fffa39;
+            border-radius: 100%;
+            height: 25px;
+            width: 25px;
+            top: 30px;
+            left: 20px;
+            z-index: 5;
+            transition: border .25s linear;
+            -webkit-transition: border .25s linear;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_1 {
+            background-color: #ff2a45;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_2 {
+            background-color: #cc3300;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_3 {
+            background-color: #FF6600;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_4 {
+            background-color: #FF9900;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_5 {
+            background-color: #ffcc00;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_6 {
+            background-color: #66CC33;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_7 {
+            background-color: #2cccc7;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_8 {
+            background-color: #66CCFF;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_9 {
+            background-color: #6699FF;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_10 {
+            background-color: #6666FF;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_11 {
+            background-color: #3333CC;
+            border: 2px solid #ffffff;
+        }
+
+        .img_upload_color_radio ul li .teamcolor_12 {
+            background-color: #e81a78;
+            border: 2px solid #ffffff;
+        }
+
+        /*整體hover時框線顏色*/
+        .img_upload_color_radio ul li:hover .check {
+            border: 5px solid #000000;
+        }
+
+        .img_upload_color_radio ul li .check::before {
+            display: block;
+            position: absolute;
+            content: '';
+            border-radius: 100%;
+            height: 15px;
+            width: 15px;
+            top: 5px;
+            left: 5px;
+            margin: auto;
+            transition: background 0.25s linear;
+            -webkit-transition: background 0.25s linear;
+        }
+
+        /*整體check時框線顏色*/
+        .img_upload_color_radio input[type=radio]:checked ~ .check {
+            border: 5px solid #000000;
+        }
+
+        /*------------end of 團隊背景色radio 樣式*/
+
+        .team_intorduction textarea, .team_slogan textarea, .team_member_addlist textarea {
+            width: 650px;
+            height: 250px;
+            border: 3px #1D1E1E solid;
+            margin-left: 0px;
+
+        }
+
+        /*textarea:focus {*/
+        /*background-color: lightpink;*/
+        /*border: 3px #ffffff dashed;*/
+        /*}*/
+
+        .team_intorduction label, .team_slogan label, .team_member_addlist_title {
+            display: block;
+            margin-top: 10px;
+            /* margin-bottom: 10px; */
+            padding-bottom: 0px;
+        }
+
+        .team_intorduction, .team_slogan, .team_member_addlist {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+
+        /*隊員選擇清單scrollbar樣式*/
+
+        .scrollbar {
+            float: left;
+            margin-top: 10px;
+            height: 285px;
+            width: 325px;
+            background: transparent;
+            /* border: 1px solid black; */
+
+            /* margin-bottom: 25px; */
+        }
+
+        .scrollbar_left {
+            border-top: 3px solid black;
+            border-left: 3px solid black;
+            /* border-right: 3px solid black; */
+            border-bottom: 3px solid black;
+            overflow-y: scroll;
+
+        }
+
+        .scrollbar_right {
+            border-top: 3px solid black;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+            overflow-y: scroll;
+
+        }
+
+        .set-overflow {
+            min-height: 370px;
+
+        }
+
+        .scroll_list_title {
+            width: 325px;
+            height: 35px;
+            /* margin: 0 5px; */
+            line-height: 30px;
+            display: block;
+            background-color: #2cccc7;
+            /*border: 1px solid #ebe2d9;*/
+        }
+
+        .scroll_list_title_fixed {
+            margin-top: 10px;
+        }
+
+        /*scroll區的上偏移,讓標題假裝藏在裡面*/
+
+        .team_member_addlist_wrap {
+            margin-top: -11px;
+        }
+
+        .team_member_addlist {
+            text-align: center;
+            width: 670px;
+            margin: auto;
+        }
+
+        /*
+         *  STYLE 8
+         */
+
+        #team_scroll_1::-webkit-scrollbar-track, #team_scroll_2::-webkit-scrollbar-track {
+            border: 1px solid black;
+            background-color: #F5F5F5;
+        }
+
+        #team_scroll_1::-webkit-scrollbar, #team_scroll_2::-webkit-scrollbar {
+            width: 10px;
+            background-color: #F5F5F5;
+        }
+
+        #team_scroll_1::-webkit-scrollbar-thumb, #team_scroll_2::-webkit-scrollbar-thumb {
+            background-color: #000000;
+        }
+
+        .flex-box {
+            display: flex;
+        }
+
+        /*scroll區的左側隊員列表*/
+
+        .group_memberlist_already {
+            border-collapse: collapse;
+            font-size: 14px;
+            box-sizing: border-box;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+        .group_memberlist_already tr {
+            display: flex;
+            margin-bottom: 5px;
+            align-items: center;
+        }
+
+        .group_memberlist_already th, .group_memberlist_already td {
+            /*padding: 8px;*/
+            text-align: center;
+
+        }
+
+        .memberlist_username_id {
+            width: 137px;
+            height: 25px;
+            background-color: #939393;
+            border-radius: 25px;
+            display: block;
+            box-sizing: border-box;
+            line-height: 22px;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .memberlist_delete {
+            background-color: #0a2449;
+            border-radius: 25px;
+            cursor: pointer;
+            display: block;
+            width: 55px;
+            height: 25px;
+            line-height: 24px;
+            color: white;
+            padding: 0px;
+        }
+
+        .memberlist_delete:hover {
+            background-color: #EAA315;
+        }
+
+        /*scroll區的右側隊員列表*/
+
+        .group_memberlist_find {
+            border-collapse: collapse;
+            font-size: 14px;
+            box-sizing: border-box;
+            /*margin-top: 35px;*/
+            margin-left: 15px;
+
+        }
+
+        .group_memberlist_find tr {
+            display: flex;
+            margin-bottom: 5px;
+            align-items: center;
+        }
+
+        .group_memberlist_find th, .group_memberlist_find td {
+            /*padding: 8px;*/
+            text-align: center;
+
+        }
+
+        .memberlist_username_id, .memberlist_username_id_add {
+            width: 137px;
+            height: 25px;
+            background-color: #939393;
+            border-radius: 25px;
+            display: block;
+            box-sizing: border-box;
+            line-height: 22px;
+            color: white;
+            margin-right: 10px;
+        }
+
+        .memberlist_add {
+            background-color: #66cccc;
+            border-radius: 25px;
+            cursor: pointer;
+            display: block;
+            width: 55px;
+            height: 25px;
+            line-height: 24px;
+            color: #000000;
+            padding: 0px;
+        }
+
+        .memberlist_add:hover {
+            background-color: #e7418d;
+            color: #ffffff;
+        }
+
+        /*scroll區的右側隊員列表裡search box*/
+
+        #search-box {
+            font-size: 14px;
+            width: 270px;
+            height: 35px;
+            background: rgba(255, 255, 255, 0) url('../image/search_icon.png') no-repeat 12px 10px;
+            background-size: 5%;
+            padding: 3px 3px 3px 22px;
+            /*box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);*/
+            transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+            border: 1px solid #000000;
+            padding-left: 43px;
+            padding-right: 43px;
+            font-family: Microsoft JhengHei;
+            letter-spacing: 0;
+            font-weight: bold;
+
+        }
+
+        #search-box:focus {
+
+            border: 2px solid #2cccc7;
+
+        }
+
+        html, body {
+            margin: 0;
+        }
+
+        canvas {
+            position: relative;
+        }
+
+
+
+/*0418新增三公仔效果*/
+
+        .left_soilder_box {
+            top: 600px;
+            position: absolute;
+
+
+            transform-origin: 0 0;
+
+            animation-name: left_flip;
+            animation-duration: 3s;
+
+            /*opacity: 1;*/
+            /*animation-delay: 6s;*/
+
+
+        }
+
+
+        .right_soilder_box{
+            position: absolute;
+            right: 0px;
+            top: 60px;
+
+            transform-origin: right center;
+
+            animation-name: right_flip;
+            animation-duration: 3s;
+
+
+
+        }
+
+        .bottom_soilder_box{
+
+            right: -63px;
+            position: absolute;
+            bottom: -51px;
+
+
+            animation-name: bottom_flip;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+
+        }
+
+
+        @keyframes left_flip {
+            0%{   transform: rotateY(180deg); opacity: 0;}
+            1% {   transform: rotateY(180deg); opacity: 1;}
+            35% {   transform: rotateY(0deg);opacity: 1;}
+            40%{transform: translateX(-40px);opacity: 1;}
+            100% {   transform: rotateY(0deg); opacity: 1;}
+            /*70%{transform: translateX(0px);}*/
+            /*75%{transform: translateX(-30px);}*/
+            /*80%{transform: translateX(0px);}*/
+            /*85%{transform: translateX(-10px);}*/
+            /*90%{transform: translateX(0px);}*/
+
+        }
+
+        @keyframes right_flip {
+            0% {   transform: rotateY(180deg);   }
+            35% {   transform: rotateY(0deg);}
+
+            40%{transform: translateX(10px);}
+            71%{transform: translateX(15px);}
+            73%{transform: translateX(10px);}
+            75%{transform: translateX(15px);}
+            77%{transform: translateX(10px);}
+            79%{transform: translateX(15px);}
+            81%{transform: translateX(10px);}
+            83%{transform: translateX(15px);}
+            85%{transform: translateX(10px);}
+            87%{transform: translateX(15px);}
+            89%{transform: translateX(10px);}
+            100% {transform: translateX(0px);}
+
+
+        }
+
+
+        @keyframes bottom_flip {
+            0%{   transform: translateY(30px); }
+            25%{   transform: translateY(0px);}
+
+            35%{   transform: translateY(10px);}
+
+            50%{   transform: translateY(30px); }
+
+
+            65%{   transform: translateY(0px); }
+            75%{   transform: translateY(10px);}
+
+
+            100%{   transform: translateY(30px);}
+
+            /*70%{transform: translateX(0px);}*/
+            /*75%{transform: translateX(-30px);}*/
+            /*80%{transform: translateX(0px);}*/
+            /*85%{transform: translateX(-10px);}*/
+            /*90%{transform: translateX(0px);}*/
+
+        }
+
+/*-----------------------------------*/
+
+
+        .form_error {
+            display: none;
+        }
+
+        .errorcolor {
+            color: rgba(232,70,113,1);
+        }
+
+        .errorcolor span {
+            color: rgba(232,70,113,1);
+        }
+
+        .errorcolor i {
+            color: rgba(232,70,113,1);
+        }
+
+
+        ::-webkit-input-placeholder {
+            font-size: 12px;
+        }

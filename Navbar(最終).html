@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="css/activity.css">
+    <link rel="stylesheet" media="screen and (max-width: 899px)" href="css/navbar_phone.css" />
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="css/navbar_pc.css" />
+    <script src="lib/jquery-3.1.1.js"></script>
+    <title>導覽列</title>
+    <style>
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: Microsoft JhengHei;
+            background-color: #011F35;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            letter-spacing: 8px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 5px;
+            color: #D5D5D5;
+        }
+
+        .flexbox {
+            display: flex;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <header id="nav_pc" class="navigation">
+        <div class="logo">
+            <div><img src="image/logo_nav.png" alt=""></div>
+        </div>
+
+        <ul class="nav">
+            <li class="nav_li" data-x="-80px">
+                <a href="">首　　頁<span class="bottom_bar"></span></a>
+            </li>
+
+            <li class="nav_li" data-x="50px">
+                <a href="">詳細介紹</a>
+                <ul class="sub_nav transition">
+                    <li><a href="">叢　　林</a></li>
+                    <li><a href="">城　　鎮</a></li>
+                    <li><a href="">廣　　場</a></li>
+                    <li><a href="">室內作戰</a></li>
+                </ul>
+            </li>
+
+            <li class="nav_li active_bar" data-x="180px">
+                <a class="" href="activity_list.php">參加活動</a>
+                <ul class="transition">
+                    <li><a href="">活動列表</a></li>
+                    <li><a href="">建立活動</a></li>
+                    <li><a href="">客製化派對</a></li>
+                    <li><a href="">幕後花絮</a></li>
+                </ul>
+            </li>
+
+            <li class="nav_li" data-x="310px">
+                <a href="">團隊資訊</a>
+                <ul class="transition">
+                    <li><a href="">團隊列表</a></li>
+                    <li><a href="">排 行 榜</a></li>
+                    <li><a href="">建立團隊</a></li>
+                </ul>
+            </li>
+
+            <li class="nav_li" data-x="440px">
+                <a href="">裝備列表</a>
+            </li>
+        </ul>
+
+        <ul class="nav_right">
+            <span>林心韻</span>
+            <li><a href=""><img src="image/user.svg" alt=""></a></li>
+            <li><a href=""><img src="image/cart.svg" alt=""></a></li>
+            <li><a href=""><img src="image/about.svg" alt=""></a></li>
+        </ul>
+    </header>       <!--.navigation_pc-->
+
+    <div id="nav_phone" >
+        <header class="navigation flexbox">
+
+            <div class="menu transition hum">
+                    <div class="allbar">
+                        <div class="bar bar1 transition"></div>
+                        <div class="bar bar2 transition"></div>
+                        <div class="bar bar3 transition"></div>
+                    </div>
+            </div><!-- menu -->
+
+            <div class="logo">
+                <div><img src="image/logo_nav.png" alt=""></div>
+            </div>
+
+            <ul class="nav_right">
+                <li><a href=""><img src="image/user.svg" alt=""></a></li>
+                <li><a href=""><img src="image/cart.svg" alt=""></a></li>
+            </ul>
+        </header><!--.navigation_phone-->
+
+        <ul class="nav transition">
+            <li class="nav_li">
+                <a href="">首　　頁</a>
+            </li>
+
+            <li class="nav_li">
+                <p class="">詳細介紹</p><div><span class="transition"> < </span></div>
+                <ul class="sub_nav transition">
+                    <li><a href="">叢林</a></li>
+                    <li><a href="">城鎮</a></li>
+                    <li><a href="">廣場</a></li>
+                    <li><a href="">室內作戰</a></li>
+                </ul>
+            </li>
+
+            <li class="nav_li ">
+                <p class="">參加活動</p><div><span class="transition"> < </span></div>
+                <ul class="sub_nav transition">
+                    <li><a href="">活動列表</a></li>
+                    <li><a href="">建立活動</a></li>
+                    <li><a href="">客製化派對</a></li>
+                    <li><a href="">幕後花絮</a></li>
+                </ul>
+            </li>
+
+            <li class="nav_li">
+                <p class="">團隊資訊</p><div><span class="transition"> < </span></div>
+                <ul class="sub_nav transition">
+                    <li><a href="">團隊列表</a></li>
+                    <li><a href="">排 行 榜</a></li>
+                    <li><a href="">建立團隊</a></li>
+                </ul>
+            </li>
+
+            <li class="nav_li">
+                <a href="">裝備列表</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+<script>
+
+
+    // 導覽列------手機板----------------------------------------
+$(".menu").click(function(){
+    $(this).toggleClass('active');
+});
+
+$(".menu").click(function(){
+    $(".nav").toggleClass('active');
+});
+
+$(".nav_li").click(function(){
+    $(this).find('.sub_nav').toggleClass('active').siblings().toggleClass('active');
+});
+
+$(".nav_li").click(function(){
+    $(this).find('span').toggleClass('active');
+});
+
+
+// 導覽列------電腦板----------------------------------
+var x = $('.active_bar').data("x");
+$(".bottom_bar").css({marginLeft:x});
+
+$(".nav_li a").mouseover(function(){
+var x = $(this).parent(".nav_li").data("x");
+
+$(".bottom_bar").stop().animate({marginLeft:x}, 200);
+});
+
+$(".nav_li a").mouseout(function () {
+//        $(".nav_li ul").css(display="block");
+
+var x = $('.active_bar').data("x");
+$(".bottom_bar").stop().animate({marginLeft: x}, 200);
+});
+
+</script>
+
+
+</body>
+</html>

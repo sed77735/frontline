@@ -1,0 +1,372 @@
+
+
+        body {
+            /*background: #d5d5d1;*/
+            background: url("../image/01sandboard-dark.jpg") fixed;
+            font-family: Microsoft JhengHei;
+        }
+
+        header {
+            background-color: #1D1E1E;
+            height: 70px;
+        }
+
+        .container_nav {
+            display: flex;
+        }
+
+
+        /* 頁籤 */
+        .abgne_tab {
+            clear: left;
+            width: 400px;
+            margin: 10px 0;
+        }
+
+        ul.tabs {
+            width: 800px;
+            margin-bottom: 0;
+        }
+
+        ul.tabs li {
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: -1px; /* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+            background: #ffffff;
+            border: none;
+            margin-left: 5px;
+        }
+
+        ul.tabs li a {
+            display: block;
+            padding: 0 50px;
+            text-decoration: none;
+            color: #999999;
+            font-size: 18px;
+        }
+
+        ul.tabs li a:hover {
+            background: #ffffff;
+            color: #EAA315;
+
+        }
+
+        ul.tabs li.active {
+            background: #ffffff;
+            box-shadow: 5px 0 5px #4b4b4b;
+
+        }
+
+        ul.tabs li.active a:hover {
+            background: #fff;
+            color: #EAA315;
+            box-shadow: 5px 0 5px #4b4b4b;
+        }
+
+        div.tab_container .tab_content {
+            padding: 20px;
+        }
+
+        div.tab_container .tab_content h2 {
+            margin: 0 0 20px;
+        }
+
+        /*----------------------------------------------------     */
+        .wrap {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            position: relative;
+        }
+
+        .table_side {
+            width: 830px;
+            height: 100%;
+            float: left;
+            background: white;
+        }
+
+        .people_side {
+            width: 450px;
+            height: 550px;
+            background: url("../imgs/solider/doll_bg_test.jpg");
+            float: right;
+            position: absolute;
+            right: 0;
+            top: 40px;
+        }
+
+        .cart_icon {
+            float: left;
+            text-align: center;
+            padding: 15px;
+            cursor: pointer;
+            color: #777777;
+        }
+
+        .cart_icon p {
+            color: #777777;
+        }
+
+        .remove_item {
+            width: 50%;
+            height: 120px;
+            line-height: 40px;
+        }
+        .like_item {
+            width: 50%;
+            height: 120px;
+            line-height: 40px;
+            background:  url("../imgs/addheart_black-01.png") no-repeat center 22px ;
+
+        }
+
+        .remove_item:hover {
+            background: #E7418D;
+            color: white;
+        }
+
+        .remove_item:active {
+            background: #b23272;
+        }
+
+        .like_item:hover {
+            color: white;
+            background: #4AD9C7 url("../imgs/wishlist_hover.png") no-repeat center 22px ;
+        }
+        /*--------------------------------------------------421更改-----------*/
+
+        .like_item:active {
+            background: #5BBCAE;
+        }
+
+        .remove_item:hover p {
+
+            color: white;
+        }
+
+        .like_item:hover p {
+            color: white;
+
+        }
+
+        .like_remove_item {
+            width: 50%;
+            height: 120px;
+            line-height: 40px;
+        }
+
+        .like_like_item, .activity_join_btn {
+            width: 50%;
+            height: 120px;
+            line-height: 40px;
+        }
+
+        .like_remove_item:hover {
+            background: #E7418D;
+            color: white;
+        }
+
+        .activity_join_btn:hover {
+            color: white;
+            background: #4AD9C7;
+        }
+
+        .like_remove_item:active {
+            background: #b23272;
+        }
+
+        .like_like_item:hover {
+            color: white;
+            background: #4AD9C7;
+        }
+
+        .like_like_item:active {
+            background: #5BBCAE;
+        }
+
+        .like_remove_item:hover p {
+
+            color: white;
+        }
+
+        .like_like_item:hover p {
+            color: white;
+
+        }
+
+        .checkout_button {
+            background: #EAA315;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 50px;
+            color: white;
+            font-weight: bold;
+            letter-spacing: 5px;
+            width: 120px;
+            text-align: center;
+        }
+
+        .total_price {
+            font-size: 18px;
+            color: #e7418d;
+        }
+
+        .checkout_button:hover {
+            text-decoration: none;
+            color: white;
+            background: #ce8d19;
+        }
+
+        .product {
+            width: 100%;
+            background: white;
+            clear: both;
+            height: 400px;
+        }
+
+        /*0418修改*/
+
+        .cart_list {
+            display: flex;
+            width: 20%;
+            float: left;
+            margin: 0 30px;
+            flex-direction: column;
+            align-items: stretch;
+
+        }
+        .single_product{
+            align-self: center;
+            justify-content: center;
+        }
+
+        /*--------------------------------*/
+
+        .cart_list > p {
+            color: #0f0f0f;
+            font-size: 15px;
+        }
+
+        .cart_icon_prod {
+            color: #777777;
+            cursor: pointer;
+        }
+
+/*0418*/
+
+        .cart_icon_prod:hover {
+            color: rgba(232,70,113,1);
+        }
+
+/*------------------------------------*/
+
+        .cart_love_prod {
+            width: 28px;
+            height: 28px;
+            background: url("../imgs/addheart_black-01.png") no-repeat center;
+            float: left;
+            position: absolute;
+            margin: 0px 10px;
+            cursor:pointer ;
+
+        }
+
+        .cart_love_prod:hover {
+
+        }
+
+        .cart_qty {
+            position: relative;
+            right: -140px;
+        }
+
+        .prod_title {
+            font-size: 20px;
+            padding: 0 80px 0 0;
+            margin: -50px 40px;
+            font-weight: bold;
+        }
+
+        .prod_price {
+            color: #e7418d;
+            font-size: 20px;
+        }
+
+        .tab_change {
+            position: relative;
+            top: 50px;
+            right: -20px;
+        }
+
+        .tab_active {
+            padding: 5px 20px;
+            background: #EAA315;
+            color: white;
+            margin: 0px 20px;
+            border-radius: 50px;
+
+        }
+        .likecolor{
+            background: url("../imgs/wishlist_hover.png") no-repeat center center;
+            color: white;
+        }
+        /*--------------------------------------------------421更改------------------------------------*/
+        .likebtn{
+            background:  url("../imgs/wishlist_hover.png") no-repeat center 22px ;
+            cursor: pointer;
+        }
+        /*--------------------------------------------------421更改------------------------------------*/
+        /*0418新增*/
+
+        .qty{
+            border: solid 1px #000;
+
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+
+            padding-right: 14px;
+
+            background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+
+            padding-left: 5px;
+            /*   display:block; */
+            width:45px;
+            height:32px;
+            border:1px solid black;
+            font-size:14px;
+            font-weight:bold;
+            line-height: 32px;
+
+
+        }
+
+        .prod_qty {
+            border: solid 1px #000;
+
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+
+            padding-right: 14px;
+
+            background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;
+
+            padding-left: 5px;
+            /*   display:block; */
+            width:45px;
+            height:32px;
+            border:2px solid black;
+            font-size:14px;
+            font-weight:bold;
+            position: relative;
+            top: -5px;
+            left: -5px;
+
+
+        }
+        /*--------------*/

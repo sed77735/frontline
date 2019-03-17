@@ -1,0 +1,683 @@
+        /* ------------圖片標題  .activity_title---------------- */
+
+        .activity_wrap {
+            max-width: 1270px;
+            margin: 0 auto;
+            background: #EBE2D9 url("../image/activity_bg.png") repeat-y center center fixed;
+            background-blend-mode: color-burn;
+        }
+
+        .create_activity_title {
+            background: #fff;
+            max-width: 1095px;
+            height: 453px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .create_activity_title_left {
+            flex: 1 1 100px;
+        }
+
+        .create_activity_title_right {
+            flex: 7 3 300px;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: rgba(74, 217, 199, .5);
+        }
+
+        .create_activity_title_right img {
+            /*width: 100%;*/
+            margin: 25px;
+            mix-blend-mode: multiply;
+        }
+
+        .create_activity_title_text {
+            background-color: #EFB600;
+            width: 270px;
+            height: 270px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            position: absolute;
+            top: 91.5px;
+            left: 36px;
+
+
+            /*0415新增  黃色title閃底色----------------------------------------------*/
+            overflow: hidden;
+
+        }
+
+        .create_activity_title_text:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 490%;
+            width: 140%;
+            background: rgba(255, 255, 255, 0.13);
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
+            -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+            transform: translateX(-145%) translateY(-45%) rotate(-45deg);
+
+
+            animation-name: titleanimation;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            /*transition: transform 4s;*/
+
+
+        }
+
+
+        @keyframes titleanimation  {
+            from {
+                transform: translateX(-145%) translateY(-45%) rotate(-45deg);
+            }
+            to {
+                transform: translateX(180%) translateY(-45%) rotate(-45deg);
+            }
+        }
+
+        /*-----------------------------------------------------------------------------*/
+
+
+        .create_activity_title_text h2 {
+            line-height: 40px;
+        }
+
+        .create_activity_title_text p {
+            line-height: 20px;
+            width: 112px;
+        }
+
+
+
+        /* ------------//  圖片標題  .activity_title---------------- */
+
+
+
+        /* ---------------內容  .activity_content---------------- */
+
+        .join_content_inner {
+            padding: 50px 120px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .join_content_inner .equip_limit label[for="equip_limit"], .join_content_inner .intorduction label[for="intorduction"] {
+            padding-top: 16px;
+        }
+
+        .join_content_inner label[for="act_file"] {
+            position: relative;
+            top: 25px;
+            margin-right: 8px;
+        }
+
+        .join_content_inner span {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        span.limit_text {
+            margin-left: 430px;
+        }
+
+        form {
+            flex-direction: column;
+            align-items: center;
+            min-width: 560px;
+        }
+
+        .top_info {
+            flex-direction: column;
+            width: 560px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+
+        /*label:hover{*/
+        /*font-weight: bold;*/
+        /*text-decoration: line-through;*/
+        /*}*/
+
+
+        input {
+            font-size: 18px;
+            letter-spacing: 5px;
+            border: none;
+            width: 260px;
+            border-bottom: 3px #1D1E1E solid;
+            background-color: transparent;
+            margin: 10px;
+            padding-left: 10px;
+            outline: none;
+        }
+
+        input.date {
+            background: url("../image/datcpic.png") right center no-repeat;
+            background-size: auto 100%;
+            cursor: pointer;
+        }
+
+        select {
+
+            /*0415新增*/
+            font-size: 14px;
+            /*-----------------------*/
+
+            width: 140px;
+            height: 35px;
+            margin: 10px;
+            border: 3px #1D1E1E solid;
+            outline: none;
+
+            /*Chrome和Firefox里面的边框是不一样的，所以复写了一下*/
+
+            /*很关键：将默认的select选择框样式清除*/
+            appearance:none;
+            -moz-appearance:none;
+            -webkit-appearance:none;
+
+            /*在选择框的最右侧中间显示小箭头图片*/
+            background: url("../image/selected_nobg.png") no-repeat scroll right center;
+
+            background-color: #ebe2d9;
+
+            /*为下拉小箭头留出一点位置，避免被文字覆盖*/
+            padding: 5px 30px 5px 10px;
+            /*margin: 20px 0 0 20px;*/
+            color: #1D1E1E;
+            border-radius: inherit;
+            letter-spacing: 8px;
+
+        }
+
+        textarea {
+            width: 400px;
+            height: 150px;
+            border: 3px #1D1E1E solid;
+            background-color: transparent;
+            margin: 10px;
+            resize : none;
+            padding: 10px;
+            vertical-align: top;
+            outline: none;
+            font-family: FontAwesome;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /*0415新增 --------- textarea裡面的字體設定*/
+
+        #intorduction, #equip_limit, #active_note{
+            font-family: FontAwesome, Microsoft JhengHei;
+        }
+        /*--------------------*/
+
+
+
+
+        .line {
+            width: 1095px;
+            height: 4px;
+            background-color: rgba(74, 217, 199, .5);
+            margin: 10px;
+        }
+
+        div.active_note {
+            max-width: 558px;
+        }
+
+        .btn1 {
+            border-radius: 20px;
+            color: #ffffff;
+            font-size: 14px;
+            background: #011F35;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            border: none;
+            margin-right: 10px;
+            line-height: 20px;
+        }
+
+        .btn1:hover {
+            background: #7298b3;
+            text-decoration: none;
+            outline: none;
+        }
+
+        .btn2 {
+            border-radius: 20px;
+            color: #ffffff;
+            font-size: 14px;
+            background: #66CCCC;
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            border: none;
+
+            /*0415新增*/
+            margin-right: 10px;
+            line-height: 20px;
+            /*-----------------------*/
+
+        }
+
+        .btn2:hover {
+            background: #3cb0fd;
+            text-decoration: none;
+            outline: none;
+            cursor: pointer;
+            /*color: #ffffff;*/
+
+        }
+
+
+        .btn {
+            margin: 10px 0;
+            align-self: flex-end;
+        }
+
+        /* ---------------//  內容  .content---------------- */
+
+
+        /*.mode select {*/
+        /*width: 190px;*/
+        /*}*/
+
+        .act_img_form {
+            width: 730px;
+        }
+
+
+        .img_upload {
+            /*overflow: hidden;*/
+            position: relative;
+            display: inline-block;
+            /*background-color: #fff;*/
+            width: 500px;
+            height: 40px;
+            text-align: center;
+            /*padding: 10px 30px;*/
+            vertical-align: top;
+        }
+
+        .img_upload_groupbk_review {
+            width: 265px;
+            height: 160px;
+            /*background: url("image/add_groupbk_photo.png") no-repeat center center;*/
+            /*background-size: cover;*/
+            display: inline-block;
+            /*text-align: center;*/
+            margin-bottom: 10px;
+        }
+
+        #img_activity_div img {
+            width: 100%;
+            /*height: 100%;*/
+        }
+
+        .img_file {
+            position: absolute;
+            opacity: 0;
+            filter: alpha(opacity=0);
+            top: 0;
+            right: 0;
+            width: 365px;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .custom_img {
+            background: #fff;
+            width: 365px;
+            height: 40px;
+            opacity: 0.9;
+            align-items: center;
+            margin-left: 132px;
+        }
+
+        .custom_img span {
+            width: 265px;
+        }
+
+        .custom_img p {
+            background: #EAA315;
+            font-size: 14px;
+            width: 100px;
+            height: 40px;
+            /*margin-top: -10px;*/
+            line-height: 40px;
+            /*margin-left: 270px;*/
+        }
+
+
+
+        .note textarea {
+            width: 650px;
+            height: 250px;
+            border: 3px #1D1E1E dashed;
+        }
+
+        .note label{
+            display: block;
+            margin-left: 65px;
+        }
+
+
+        .group {
+            max-width: 1000px;
+            /*height: 500px;*/
+            /*background: red;*/
+            max-height: 0;
+            overflow: hidden;
+            /*border: 2px solid orangered;*/
+        }
+
+        .active {
+            max-height: 2000px;
+        }
+
+        .transition {
+            transition: 1s;
+        }
+
+
+        .more {
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .more.active {
+            max-height: 100px;
+        }
+
+        /*我在這裡~~~~~~~~~~~~~~~~~*/
+
+        /* ---------------//  槍對參加區塊  .content---------------- */
+
+        .add_group_member{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            /*background-color: #2cccc7;*/
+            overflow: hidden;
+            margin-right: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .add_group_member img{
+            /*width: 100%;*/
+            height: 100%;
+        }
+
+        .add_group_member_username{
+            display: block;
+            box-sizing: border-box;
+            width: 100px;
+            height: 30px;
+            background-color: #cecece;
+            color: black;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .add_group_member_wrap{
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        /*隊員選擇清單scrollbar樣式*/
+
+        .scrollbar
+        {
+            float: left;
+            margin-top: 10px;
+            height: 285px;
+            width: 325px;
+            background: transparent;
+            /* border: 1px solid black; */
+            overflow-y: scroll;
+            /* margin-bottom: 25px; */
+        }
+
+        .scrollbar_left{
+            border-top: 3px solid black;
+            border-left: 3px solid black;
+            /* border-right: 3px solid black; */
+            border-bottom: 3px solid black;
+
+        }
+
+        .scrollbar_right {
+            border-top: 3px solid black;
+            border-left: 3px solid black;
+            border-right: 3px solid black;
+            border-bottom: 3px solid black;
+
+        }
+
+
+        .set-overflow
+        {
+            min-height: 370px;
+
+        }
+
+        .scroll_list_title{
+            width: 325px;
+            height: 35px;
+            /* margin: 0 5px; */
+            line-height: 30px;
+            display: block;
+            background-color: #2cccc7;
+            /*border: 1px solid #ebe2d9;*/
+        }
+
+
+        .scroll_list_title_fixed{
+            margin-top: 10px;
+        }
+
+        /*scroll區的上偏移,讓標題假裝藏在裡面*/
+
+        .team_member_addlist_wrap{
+            margin-top: -11px;
+        }
+
+        .team_member_addlist
+        {
+            text-align: center;
+            width: 670px;
+            margin: auto;
+            flex-direction: column;
+            margin-top: 15px;
+        }
+
+
+        /*
+         *  STYLE 8
+         */
+
+        #team_scroll_1::-webkit-scrollbar-track, #team_scroll_2::-webkit-scrollbar-track
+        {
+            border: 1px solid black;
+            background-color: #F5F5F5;
+        }
+
+        #team_scroll_1::-webkit-scrollbar, #team_scroll_2::-webkit-scrollbar
+        {
+            width: 10px;
+            background-color: #F5F5F5;
+        }
+
+        #team_scroll_1::-webkit-scrollbar-thumb, #team_scroll_2::-webkit-scrollbar-thumb
+        {
+            background-color: #000000;
+        }
+
+        .flex-box{
+            display: flex;
+        }
+
+
+        /*scroll區的左側隊員列表*/
+
+
+        .group_memberlist_already {
+            border-collapse: collapse;
+            font-size: 14px;
+            box-sizing: border-box;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+
+        .group_memberlist_already tr{
+            display: flex;
+            margin-bottom: 5px;
+            align-items: center;}
+
+        .group_memberlist_already th, .group_memberlist_already td {
+            /*padding: 8px;*/
+            text-align: center;
+
+        }
+
+
+        .memberlist_username_id{
+            width: 137px;
+            height: 25px;
+            background-color: #939393;
+            border-radius: 25px;
+            display: block;
+            box-sizing: border-box;
+            line-height: 22px;
+            color: white;
+            margin-right: 10px;
+        }
+
+
+        .memberlist_delete{
+            background-color: #0a2449;
+            border-radius: 25px;
+            cursor: pointer;
+            display: block;
+            width: 55px;
+            height: 25px;
+            line-height: 24px;
+            color: white;
+            padding: 0px;
+        }
+
+        .memberlist_delete:hover{
+            background-color:#EAA315;
+        }
+
+
+        /*scroll區的右側隊員列表*/
+
+
+        .group_memberlist_find {
+            border-collapse: collapse;
+            font-size: 14px;
+            box-sizing: border-box;
+            margin-top: 15px;
+            margin-left: 15px;
+
+        }
+
+
+        .group_memberlist_find tr{
+            display: flex;
+            margin-bottom: 5px;
+            align-items: center;}
+
+        .group_memberlist_find th, .group_memberlist_find td {
+            /*padding: 8px;*/
+            text-align: center;
+
+        }
+
+
+        .memberlist_username_id, .memberlist_username_id_add{
+            width: 137px;
+            height: 25px;
+            background-color: #939393;
+            border-radius: 25px;
+            display: block;
+            box-sizing: border-box;
+            line-height: 22px;
+            color: white;
+            margin-right: 10px;
+        }
+
+
+        .memberlist_add{
+            background-color: #66cccc;
+            border-radius: 25px;
+            cursor: pointer;
+            display: block;
+            width: 55px;
+            height: 25px;
+            line-height: 24px;
+            color: #000000;
+            padding: 0px;
+        }
+
+        .memberlist_add:hover{
+            background-color:#e7418d;
+            color: #ffffff;
+        }
+
+
+        /*我在這裡~~~~~~~~~~~~~~~~~*/
+
+        .error-color {
+            color: #009797;
+        }
+
+        .join_content {
+            /*position: relative;*/
+        }
+
+        .map {
+            width: 400px;
+            /* height: 50px; */
+            /*position: absolute;*/
+            /*top: 105px;*/
+            /*right: 90px;*/
+            margin-left: 133px;
+        }
+
+        .map img {
+            width: 100%;
+        }
+
+
+        /*0418新增　　無團隊無法選擇遊戲模式*/
+
+        .no_team_nogame{
+            background-color: #2cccc7;
+            height: 42px;
+            text-align: center;
+            width: 565px;
+            line-height: 42px;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 20px 0;
+            color:white;
+
+        }

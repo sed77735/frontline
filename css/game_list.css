@@ -1,0 +1,599 @@
+
+.group_wrap {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+/* ------------//無團隊照片底圖---------------- */
+
+
+
+.group_hasteam {
+    border-left: 20px #fff solid;
+    border-right: 20px #fff solid;
+    border-top: 15px #fff solid;
+    border-bottom: 15px #fff solid;
+    /*height: 325px;*/
+    /*display: flex;*/
+    position: relative;
+}
+
+
+
+.group_hasteam {
+    /*width: 1230px;*/
+    width: 100%;
+    background-image: url("../image/photo_01_coverbk.jpg");
+    background-size: cover;
+    height: 445px;
+}
+
+.group_hasteam_photowrap{
+    width: 100%;
+}
+
+
+
+.group_hasteam .group_hasteam_photowrap img{
+    width: 100%;
+    display: block;
+    /*-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);*/
+    /*clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);*/
+}
+
+.group_hasteam h2 {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    background-color: #EAA315;
+    display: inline-block;
+    width: 160px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+.group_addteam_bt{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-color:#4ad8c6;
+    border-radius: 35px;
+    line-height: 35px;
+    color: black;
+    padding-left: 15px;
+    position: absolute;
+    right: 0px;
+    top: 340px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.group_hasteam_coverbk {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(172,65%,85%,0.8);
+    position: absolute;
+    top: 0;
+}
+
+
+
+.group_hasteam_leftinfo{
+    width: 514px;
+    height: 135px;
+    background-color:hsla(204,98%,20%,.5);
+    color: white;
+    position: absolute;
+    top:132px;
+    left: 45px;
+    padding: 15px 25px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 25px;
+    text-align: left;
+    letter-spacing: 5px;
+
+}
+
+
+
+
+.group_hasteam_rightinfo{
+    width: 346px;
+    height: 187px;
+    background-color:hsla(204,98%,20%,.5);
+    color: white;
+    position: absolute;
+    top:201px;
+    right:0px;
+    padding: 18px 28px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 5px;
+
+}
+
+
+/*有團隊隊員資料*/
+
+/*.group_member_info {*/
+/*display: flex;*/
+/*margin-top: 0px;*/
+
+/*width: 100%;*/
+/*height: 350px;*/
+/*justify-content: space-around;*/
+/*!*background: lightgrey;*!*/
+/*border: 1px solid orangered;*/
+/*align-content: space-around;*/
+/*position: absolute;*/
+/*top: 100px;*/
+
+/*}*/
+/*.group_member_info {*/
+/*display: flex;*/
+/*!* align-content: center; *!*/
+/*margin-top: 0px;*/
+/*width: 100%;*/
+/*height: 250px;*/
+/*!* justify-content: space-around; *!*/
+/*!* background: lightgrey; *!*/
+/*border: 1px solid orangered;*/
+/*align-content: space-around;*/
+/*position: absolute;*/
+/*top: 100px;*/
+/*justify-content: center;*/
+
+/*}*/
+
+.group_member_info {
+    display: flex;
+    max-width: 1225px;
+    margin-top: 0px;
+    height: 280px;
+    justify-content: space-around;
+    /*border: 1px solid orangered;*/
+    align-content: space-around;
+    padding: 50px 50px;
+    height: 445px;
+}
+
+
+.group_member_info>div {
+    border-radius: 50%;
+    margin: 0% 1%;
+
+}
+
+.group_member_info>div p{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: -30px;
+}
+
+.m1{
+    align-self: flex-start;
+    /*background: red;*/
+    min-width: 110px;
+    height: 110px;
+    /*background-image: url("image/group_member_photo1.png");*/
+    background-size: cover;
+}
+.m2{
+    align-self: center;
+    /*background: orange;*/
+    min-width: 130px;
+    height: 130px;
+    /*background-image: url("image/group_member_photo2.png");*/
+    background-size: cover;
+}
+.m3{
+    align-self: flex-end;
+    /*background: yellow;*/
+    min-width: 180px;
+    height: 180px;
+    /*background-image: url("image/group_member_photo3.png");*/
+    background-size: cover;
+}
+.m4{
+    align-self: center;
+    /*background: green;*/
+    min-width: 130px;
+    height: 130px;
+    /*background-image: url("image/group_member_photo4.png");*/
+    background-size: cover;
+}
+.m5{
+    align-self: flex-start;
+    /*background: blue;*/
+    min-width: 110px;
+    height: 110px;
+    /*background-image: url("image/group_member_photo5.png");*/
+    background-size: cover;
+}
+
+.m {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    /*overflow: hidden;*/
+}
+
+.m img {
+    width: 100%;
+    margin-top: 47px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.ms {
+    width: 130px;
+    height: 130px;
+}
+
+.mss {
+    width: 110px;
+    height: 110px;
+}
+
+
+/*.group_member_info_wrap{*/
+/*position: absolute;*/
+/*top:0;*/
+/*left: 0;*/
+/**/
+/*}*/
+
+
+
+/* ------------//無團隊照片底圖---------------- */
+
+
+
+.group_noteam {
+    border-left: 20px #fff solid;
+    border-right: 20px #fff solid;
+    border-top: 15px #fff solid;
+    border-bottom: 15px #fff solid;
+    /*height: 325px;*/
+    /*display: flex;*/
+    position: relative;
+}
+
+.group_noteam div:first-child{
+    /*width: 1230px;*/
+    width: 100%;
+}
+
+.group_noteam div:first-child img{
+    width: 100%;
+    display: block;
+    /*-webkit-clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);*/
+    /*clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);*/
+}
+
+.group_noteam h2 {
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 8px;
+    background-color: #EAA315;
+    display: inline-block;
+    width: 160px;
+    height: 55px;
+    text-align: center;
+    line-height: 55px;
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: -20px;
+}
+
+.group_noteam_leftinfo{
+    width: 514px;
+    height: 135px;
+    background-color:hsla(204,98%,20%,.5);
+    color: white;
+    position: absolute;
+    top:132px;
+    left: 45px;
+    padding: 15px 25px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 25px;
+    text-align: left;
+    letter-spacing: 5px;
+
+}
+
+
+
+
+.group_noteam_rightinfo{
+    width: 346px;
+    height: 187px;
+    background-color:hsla(204,98%,20%,.5);
+    color: white;
+    position: absolute;
+    top: 60px;
+    right:0px;
+    padding: 18px 28px;
+    display: block;
+    box-sizing: border-box;
+    line-height: 25px;
+    text-align: right;
+    letter-spacing: 5px;
+
+}
+
+
+
+/*    團體列表    */
+
+.ratinglists_wrap{
+    max-width: 1270px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rating_gameHistory{
+    background-color: #cccccc;
+    height: 276px;
+    position: relative;
+    /*border: 1px solid orangered;*/
+    display: flex;
+    width: 100%;
+    /*align-items: center;*/
+    /*flex-wrap: wrap;*/
+}
+
+/*.group_team_bk{*/
+/*width: 418px;*/
+/*!*position: absolute;*!*/
+/*}*/
+
+/*.group_team_bk img{  width: 100%;  }*/
+
+.group_team_label, .group_hasteam_label {
+    width: 317px;
+    height: 100px;
+    background-color: #ededed;
+    background-image: url("../image/team_bk_all.png");
+    display: flex;
+    border-left:17px solid #eaa315;
+    box-sizing: border-box;
+    margin-left: 50px;
+    padding-left: 12px;
+    align-items: center;
+    margin-top: 178px;
+
+
+}
+
+.group_team_label_logo{
+    width: 79px;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group_team_label_logo img {
+    width: 100%;
+}
+
+.group_team_label content,.group_hasteam_label content{
+    padding-left: 24px;
+    margin-top: -12px;
+
+}
+
+.group_team_label content h3,.group_hasteam_label content h3{
+    font-size:20px;
+    font-weight:bold;
+    line-height: 35px;
+
+
+}
+
+.group_team_label content p,.group_hasteam_label content p{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.group_team_info {
+    width: 317px;
+    height: 217px;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.group_team_info a{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-color: #eaa315;
+    border-radius: 35px;
+    line-height: 35px;
+    color: black;
+    padding-left: 18px;
+    margin-left: 205px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.group_team_info content{
+
+
+}
+
+.group_team_info content h3{
+    font-size: 18px;
+}
+
+.group_team_info content h4{
+    font-size: 58px;
+    background-color: #a8a8a8;
+    padding: 15px 30px;
+    width: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.group_team_info content p{
+    margin: 0px 51px 0px 6px;
+    font-size: 18px;
+
+}
+
+.group_team_info content div{
+    display: flex;
+    /* margin: 0 auto; */
+    margin-top:10px;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+
+/*有團隊  右上方照片區  團隊label  */
+.group_hasteam_label{
+    display: flex;
+    position: absolute;
+    top:50px;
+    right:0;
+}
+
+.group_hasteam_label a{
+
+    width: 105px;
+    height: 35px;
+    background-color: #eaa315;
+    border-radius: 35px;
+    line-height: 35px;
+    color: black;
+    padding: 0px 14px;
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    font-weight: bold;
+
+}
+
+
+/*排行榜  團隊  */
+
+.rating_win_team, .rating_lose_team{
+    /*目前用%寫寬度才能伸縮*/
+    width: 25%;
+    height: 275px;
+    background: url("../image/team_bk_all.png") 100% 0 no-repeat;
+    background-color: #EDEDED;
+    border-left: 17px solid rgba(61, 61, 61, 0.9);
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    padding: 10px;
+
+
+}
+
+
+.rating_win_team content h3, .rating_lose_team h3, .rating_game_info h3{
+    font-size:20px;
+    font-weight:bold;
+    line-height: 35px;
+
+
+}
+
+.rating_win_team content p, .rating_lose_team p {
+    font-size:16px;
+    font-weight:bold;
+}
+
+
+.rating_win_team content a, .rating_lose_team content a{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-color: #eaa315;
+    border-radius: 35px;
+    line-height: 35px;
+    color: black;
+    padding-left: 18px;
+    margin-left: 130px;
+    margin-top: 75px;
+    font-weight: bold;
+}
+
+/*團隊排行榜 中間 比賽比數*/
+.rating_game_info{
+    /*目前用%寫寬度才能伸縮*/
+    width: 60%;
+    height: 275px;
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.rating_game_info_teams{
+    width: 100%;
+    /*border: 1px solid red;*/
+    display: flex;
+}
+.rating_game_info_teams img{
+    width: 50%;
+    height: auto;
+}
+.rating_game_info a{
+    display: inline-block;
+    width: 105px;
+    height: 35px;
+    background-color: #eaa315;
+    border-radius: 35px;
+    line-height: 35px;
+    color: black;
+    padding-left: 18px;
+    font-weight: bold;
+    margin-top: -20px;
+
+}
+/*0424*/
+.rating_game_info p{
+    font-size: 51px;
+    margin-top: -30px;
+    padding-bottom: 10px;
+}
+/**/
+
+.rating_game_info h3{
+    align-self: baseline;
+    margin-left: 50px;
+}
+
+
+
+div.lose, div.win {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+}
+
+div.lose img, div.win img {
+    width: 100%;
+    /*height: 100%;*/
+}

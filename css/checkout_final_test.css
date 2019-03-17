@@ -1,0 +1,73 @@
+
+body{
+    /*background: #d5d5d1;*/
+    background: url("../image/01sandboard-dark.jpg") fixed;
+}
+
+
+button{
+    outline: none;
+}
+
+/*----------------------------------------------------     */
+
+
+.wrap {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 20px #3b3b3b;
+}
+.Process{
+    text-align: center;
+    position: relative;
+    left: 50%;
+    margin: 20px 0 0 -350px;
+}
+.Process_css{
+    padding: 10px 30px;
+    float: left;
+    border-radius: 4px;
+    margin: 10px 50px;
+    color: white;
+}
+.P_style{
+    background: #EAA315;
+}
+.P_nstyle{
+    background: #aaa;
+}
+.i_style{
+    color: #0f0f0f;
+    padding:0;
+    margin:10px 0;
+}
+.check_form_wrap{
+    width:800px;
+    margin: 0 auto;
+}
+.check_form_title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #444444;
+    margin: 20px 0;
+}
+.info{
+    color: red;
+}
+.font_check{
+    text-align: center;
+    padding: 20px 0;
+    clear: both;
+}
+.btn-checkout{
+    background: #EAA315;
+    border-radius: 50px;
+    color: white;
+    border: none;
+}
+.btn-checkout:hover{
+    background: #ce8d19;
+    color: white;
+}
